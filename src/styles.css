@@ -37,6 +37,7 @@ strong {
 }
 
 .card-img-overlay {
+  display: block;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
