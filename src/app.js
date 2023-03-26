@@ -83,13 +83,13 @@ function displayForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-  `
+        `
       <div class="col-2">
         <div class="card">
-          <div class="weather-forecast-date">${formatDay(forecastDay)}</div>
-            <img src=""http://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png" alt="Image" width="42" />
+          <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+            <img src="http://openweathermap.org/img/wn/${
+              forecastDay.weather[0].icon
+            }@2x.png" alt="Image" width="42" />
               <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max">${Math.round(
                   forecastDay.temp.max
@@ -101,6 +101,9 @@ function displayForecast(response) {
         </div>
       </div>
   `;
-}
+    }
   });
 
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
