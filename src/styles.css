@@ -35,14 +35,14 @@ hr {
   background-color: #dadde1;
 }
 
-.container {
-  display: block;
+.card {
   margin: 20px auto;
   max-width: 600px;
 }
 
-.imageContainer {
+.card-img-overlay {
   display: block;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
