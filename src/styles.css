@@ -5,9 +5,9 @@ body {
 h1 {
   color: rgba(0, 26, 52, 0.693);
   position: relative;
-  top: 10px;
+  top: 5px;
   left: 200px;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 300;
   line-height: 15px;
   margin-bottom: 0;
@@ -29,6 +29,10 @@ strong {
   font-size: xx-large;
   line-height: 1;
   font-weight: 300;
+}
+
+hr {
+  background-color: #dadde1;
 }
 
 .text-bg-dark {
