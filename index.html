@@ -17,54 +17,54 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div
-          class="card-img-overlay"
-          <img
+      <div class="card text-bg-dark">
+        <img
           src="Media/cloud-blue-sky-.jpeg"
           class="card-img"
           alt="Blue sky with light clouds"
         />
-        <form id="query-form" class="mb-3">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                class="form-control form-control-sm"
-                id="city-entry"
-                autocomplete="off"
-              />
+        <div class="card-img-overlay">
+          <form id="query-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control form-control-sm"
+                  id="city-entry"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-outline-light btn-sm"
+                />
+              </div>
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-outline-light btn-sm"
-              />
+          </form>
+          <div class="tempandunits">
+            <img src="" alt="Weather icon" id="icon" class="changing-icon" />
+            <div class="temp-info">
+              <strong id="temp"></strong><span class="temp-units"> °C</span>
             </div>
           </div>
-        </form>
-        <div class="tempandunits">
-          <img src="" alt="Weather icon" id="icon" class="changing-icon" />
-          <div class="temp-info">
-            <strong id="temp"></strong><span class="temp-units"> °C</span>
+          <div class="condition">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
           </div>
-        </div>
-        <div class="condition">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
-        </div>
-        <div class="pinned">
-          <h1 id="city"></h1>
-          <ul>
-            <li>Last updated: <span id="date"></span></li>
-            <li id="snapshot"></li>
-          </ul>
-          <hr />
-          <div id="forecast"></div>
+          <div class="pinned">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="snapshot"></li>
+            </ul>
+            <hr />
+            <div id="forecast"></div>
+          </div>
         </div>
         <p class="text-center">
           <small>
