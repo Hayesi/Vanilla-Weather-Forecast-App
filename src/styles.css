@@ -35,13 +35,13 @@ hr {
   background-color: #dadde1;
 }
 
-.text-bg-dark {
+.weather-app-wrapper {
   display: block;
   margin: 20px auto;
   max-width: 600px;
 }
 
-.card-img-overlay {
+.text-bg-dark .card-img-overlay {
   display: block;
   padding: 20px;
   border: 1px solid #dadde1;
