@@ -79,13 +79,14 @@ strong {
 }
 
 .col-2 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.103);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.244);
   text-align: center;
-  background-color: rgba(240, 255, 255, 0.896);
-}
-
-.weather-forecast {
-  text-align: center;
+  background-color: rgba(110, 246, 246, 0.197);
   color: rgb(8, 38, 173);
   font-size: small;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  font-size: medium;
 }
