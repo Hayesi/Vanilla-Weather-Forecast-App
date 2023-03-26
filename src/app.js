@@ -72,3 +72,22 @@ function displayTemperature(response) {
 
   getForecast(response.data.coord);
 }
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `
+  <div class="col-2">
+            <div class="card">
+              <div class="weather-forecast-date"></div>
+              <img src="" alt="" width="42" />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"></span>
+                <span class="weather-forecast-temperature-min"></span>
+              </div>
+            </div>
+          </div>
+          `;
+}
