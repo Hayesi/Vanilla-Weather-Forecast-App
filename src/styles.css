@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: rgb(225, 225, 195);
+  position: relative;
+  top: 60px;
+  font-size: 35px;
+  font-weight: 150;
+  line-height: 15px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  color: rgba(11, 11, 119, 0.919);
+  font-size: xx-large;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.text-bg-dark {
+  display: block;
+  margin: 30px auto;
+  max-width: 55%;
+  opacity: 0.8;
+}
+
+.tempandunits .temp-units {
+  position: relative;
+  font-size: smaller;
+}
+
+.pinned li {
+  position: relative;
+  top: 70px;
+  color: rgb(225, 225, 195);
+  font-size: small;
+  font-weight: 250;
+  line-height: 15px;
+}
+
+.condition {
+  position: relative;
+  top: 35px;
+  color: rgb(8, 38, 173);
+  font-size: small;
+  font-weight: 250;
+  line-height: 15px;
+}

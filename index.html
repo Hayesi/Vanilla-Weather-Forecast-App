@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Vanilla Wearther App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card text-bg-dark">
+        <img
+          src="Media/sky-cloudscape-sunset.jpeg"
+          class="card-img"
+          alt="Sky sunset"
+        />
+        <div class="card-img-overlay">
+          <form id="query-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control form-control-sm"
+                  id="city-entry"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-outline-light btn-sm"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="tempandunits">
+            <img src="" alt="Clear" id="icon" class="changing-icon" />
+            <div class="temp-info">
+              <strong id="temp"></strong><span class="temp-units"> °C</span>
+            </div>
+          </div>
+          <div class="condition">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+          <div class="pinned">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="snapshot"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center">
+        <small>
+          <a
+            href="https://github.com/Hayesi/Vanilla-Weather-App"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Azi Essie
+        </small>
+      </p>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
