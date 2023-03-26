@@ -36,6 +36,12 @@ strong {
   max-width: 600px;
 }
 
+.card-img-overlay {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
 .tempandunits .temp-units {
   position: relative;
   font-size: smaller;
