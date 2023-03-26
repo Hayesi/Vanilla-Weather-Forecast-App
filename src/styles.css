@@ -73,7 +73,7 @@ strong {
 
 .col-2 {
   display: block;
-  margin-bottom: 20px;
+  margin-top: 20px;
   float: left;
   padding: 0 10px;
 }
@@ -82,4 +82,10 @@ strong {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.103);
   text-align: center;
   background-color: rgba(240, 255, 255, 0.896);
+}
+
+.weather-forecast {
+  text-align: center;
+  color: rgb(8, 38, 173);
+  font-size: small;
 }
